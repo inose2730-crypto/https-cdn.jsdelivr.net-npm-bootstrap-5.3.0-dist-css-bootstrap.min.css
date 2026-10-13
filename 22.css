@@ -1,0 +1,55 @@
+/* Variables Globales de Estilo */
+:root {
+  --primary-color: #0d6efd;
+  --success-color: #198754;
+  --dark-color: #212529;
+  --light-bg: #f8f9fa;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Sección Héroe Personalizada */
+.hero {
+  background: linear-gradient(135deg, #eef2f3 0%, #8e9eab 100%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Maquetación CSS Grid para la Sección de Beneficios */
+.grid-beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card-beneficio {
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-beneficio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Efecto hover en las tarjetas de programas */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Adaptación Responsiva Adicional */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
